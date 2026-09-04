@@ -1,0 +1,7 @@
+interface:
+  display_name: "Embedded Stage Review"
+  short_description: "Review embedded stages without modifying code"
+  default_prompt: "Use $embedded-stage-review to review this completed embedded development stage and record its issues."
+
+policy:
+  allow_implicit_invocation: false

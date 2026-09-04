@@ -1,0 +1,7 @@
+interface:
+  display_name: "Embedded Hardware Validation"
+  short_description: "Validate embedded hardware with observable evidence"
+  default_prompt: "Use $embedded-hardware-validation to validate this board from the supplied vendor example through the project integration."
+
+policy:
+  allow_implicit_invocation: false

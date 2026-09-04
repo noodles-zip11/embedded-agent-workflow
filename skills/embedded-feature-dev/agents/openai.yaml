@@ -1,0 +1,7 @@
+interface:
+  display_name: "Embedded Feature Development"
+  short_description: "Design, implement, and review embedded features"
+  default_prompt: "Use $embedded-feature-dev to define and document this embedded C feature, then stop for my separate implementation authorization."
+
+policy:
+  allow_implicit_invocation: false
