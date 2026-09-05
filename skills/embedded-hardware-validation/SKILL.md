@@ -77,7 +77,7 @@ Do not fix it here. Add or update an entry in `docs/issues.md` with evidence, im
 - A successful build is software evidence. A successful download is programming evidence. Neither proves boot, bus traffic, interrupt/DMA completion, timing, storage integrity, or end-to-end behavior.
 - Do not close a hardware item from simulation alone.
 - At a failing layer, do not assume dependent upper layers work. Continue upward only after the prerequisite has observable evidence.
-- **REQUIRED SUB-SKILL:** use `verification-before-completion` before any validation/completion status claim.
+- Before any validation/completion status claim, rerun the relevant authorized check against the current image and target, inspect its full output/exit status and observable hardware result, and report the command, setup, and evidence. If the required check or observation is unavailable, state why and keep the item pending; earlier runs, successful builds, or successful downloads do not replace current evidence for the claimed behavior.
 
 ## Shortcuts to reject
 

@@ -17,7 +17,7 @@ All four Skills are explicit-only. Invoke them by name, for example `$embedded-f
 
 Clone this repository and copy all four folders from `skills/` into the Skills directory supported by your agent. For this Codex setup, the personal directory is `~/.codex/skills/`. The bundle is designed to work together; hardware validation may route a material design change back through `$embedded-feature-dev` in a separate conversation and worktree.
 
-`embedded-feature-dev` and `embedded-hardware-validation` require Git worktree and independent-agent support. `embedded-stage-review` can use independent agents when its review axes are separable. The Skills reference `verification-before-completion`, `diagnosing-bugs`, and conditionally `code-review`; install compatible versions separately or expect the relevant gate to remain pending.
+`embedded-feature-dev` and `embedded-hardware-validation` require Git worktree and independent-agent support. `embedded-stage-review` can use independent agents when its review axes are separable. The bundle carries its own completion-evidence rules; it also composes with the optional Matt skills `diagnosing-bugs` and, where the review gate permits, `code-review`.
 
 ## Scope
 

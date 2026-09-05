@@ -28,7 +28,7 @@ Land the user's chosen stack; never choose it for them. Prefer the official star
 6. **Recommend dependency layout.** Compare the ecosystem-supported package manager, submodule, vendored copy, or pinned external SDK. Explain reproducibility, repository size, upgrade, and collaboration tradeoffs; wait for the user's decision.
 7. **Configure minimally.** Preserve debug access and official regeneration. Keep application-owned code outside generated ownership where possible.
 8. **Create project contracts.** Use [assets/project-agents.template.md](assets/project-agents.template.md) as a starting shape, not as invented facts. If `AGENTS.md` exists, merge minimally and preserve unrelated rules; stop before deleting a rule or resolving a conflict without user approval. Initialize the validation ledgers only when absent.
-9. **Verify with fresh evidence.** Follow the completion levels below. **REQUIRED SUB-SKILL:** use `verification-before-completion` before any completion/status claim.
+9. **Verify with fresh evidence.** Follow the completion levels below. Before any completion/status claim, run the relevant authorized check against the current artifact, inspect its full output and exit status, and report the command and result. If a check cannot run, state why and keep the corresponding status pending; do not infer success from an earlier run or from a different completion level.
 
 Read [references/bootstrap-contract.md](references/bootstrap-contract.md) when selecting a base, handling generated code, or deciding completion evidence.
 

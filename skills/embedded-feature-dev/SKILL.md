@@ -113,7 +113,7 @@ Report these sections explicitly:
 - `Remaining Risks`
 - `Independent Review`
 
-**REQUIRED SUB-SKILL:** use `verification-before-completion` immediately before these status/completion claims.
+Immediately before these status/completion claims, run the relevant authorized checks against the final artifact, inspect their full output and exit status, and report the commands and results. If a check cannot run, state why and keep that claim pending. Software checks do not establish hardware validation or independent review; cite the separate evidence required for each status.
 
 Then leave the worktree intact. Do not commit, merge, push, delete the worktree, or modify another checkout until the user reviews the result and gives a separate explicit instruction.
 

@@ -34,7 +34,7 @@ The user decides when the review starts and which features/modules form the stag
 6. **Write findings only.** Create `docs/issues.md` if absent, using the schema below. Do not fix findings in this conversation.
 7. **Report.** Summarize reviewed scope, evidence/commands, counts by severity/type, release or stage blockers, hardware limitations, and the ledger path. Leave remediation ordering to the user.
 
-Before any pass/fail or completion-style claim, **REQUIRED SUB-SKILL:** use `verification-before-completion` against the evidence actually collected.
+Before any pass/fail or completion-style claim, inspect the actual evidence collected and tie it to the reviewed artifact. Run the relevant fresh checks only within the read-only permission boundary above, inspect their full output and exit status, and report the commands and results. If only existing evidence is available, identify its date/artifact and limitations; keep unsupported claims unverified rather than inferring success.
 
 ## Finding schema
 
